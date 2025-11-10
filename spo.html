@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninho — Spotify Style</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    /* Barre latérale */
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 230px;
+      height: 100vh;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .sidebar h1 {
+      color: #1DB954;
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .sidebar a {
+      color: #b3b3b3;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .sidebar a:hover {
+      color: #fff;
+    }
+
+    /* Contenu principal */
+    .main-content {
+      margin-left: 250px;
+      padding: 30px;
+    }
+
+    .artist-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .artist-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .artist-header h2 {
+      font-size: 2.2em;
+      margin: 0;
+    }
+
+    .tracklist {
+      margin-top: 40px;
+    }
+
+    .track {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    .track:hover {
+      background-color: #1a1a1a;
+    }
+
+    .track span {
+      font-size: 16px;
+    }
+
+    .track button {
+      background-color: #1DB954;
+      border: none;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .track button:hover {
+      background-color: #17a74b;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h1>Spotify</h1>
+    <a href="#">Accueil</a>
+    <a href="#">Rechercher</a>
+    <a href="#">Votre Bibliothèque</a>
+    <a href="#">Playlists</a>
+  </div>
+
+  <div class="main-content">
+    <div class="artist-header">
+      <img src="https://i.scdn.co/image/ab6761610000e5eb0e0e1e5b4bff3af1f80ce14f" alt="Ninho">
+      <div>
+        <h2>Ninho</h2>
+        <p>Rappeur français — Albums : Jefe, Destin, M.I.L.S 3...</p>
+      </div>
+    </div>
+
+    <div class="tracklist">
+      <h3>🎵 Titres populaires</h3>
+
+      <div class="track">
+        <span>1. Jefe</span>
+        <button>▶️ Écouter</button>
+      </div>
+
+      <div class="track">
+        <span>2. Lettre à une femme</span>
+        <button>▶️ Écouter</button>
+      </div>
+
+      <div class="track">
+        <span>3. Tout en Gucci</span>
+        <button>▶️ Écouter</button>
+      </div>
+
+      <div class="track">
+        <span>4. Maman ne le sait pas (feat. Niska)</span>
+        <button>▶️ Écouter</button>
+      </div>
+
+      <div class="track">
+        <span>5. Paris c’est magique</span>
+        <button>▶️ Écouter</button>
+      </div>
+
+      <div class="track">
+        <span>6. Goutte d’eau</span>
+        <button>▶️ Écouter</button>
+      </div>
+
+      <div class="track">
+        <span>7. VVS</span>
+        <button>▶️ Écouter</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
