@@ -1,134 +1,209 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV – Sami Hammadi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #141E30, #243B55);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
-        .container {
-            width: 70%;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.5s ease;
+    }
 
-        h1, h2 {
-            color: #2c3e50;
-        }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+    }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      animation: slideIn 1.2s ease-out;
+    }
 
-        .header div {
-            flex: 1;
-        }
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+      animation: fadeInUp 1.5s ease;
+    }
 
-        .section-title {
-            background-color: #2980b9;
-            color: white;
-            padding: 5px;
-            margin-bottom: 10px;
-        }
+    section {
+      padding: 40px 60px;
+      animation: fadeInUp 1.2s ease;
+    }
 
-        .content {
-            margin-bottom: 20px;
-        }
+    h2 {
+      color: #00c6ff;
+      border-left: 4px solid #00c6ff;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
 
-        .content ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    .experience, .formation, .competences {
+      margin-bottom: 40px;
+    }
 
-        .content li {
-            margin-bottom: 10px;
-        }
+    .item {
+      margin-bottom: 20px;
+    }
 
-        .contact-info {
-            font-size: 14px;
-        }
+    .item h3 {
+      margin: 0;
+      font-size: 1.3em;
+      color: #fff;
+    }
 
-        .footer {
-            text-align: center;
-            font-size: 12px;
-            color: #777;
-            margin-top: 30px;
-        }
-    </style>
+    .item span {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #0072ff;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      transition: transform 0.3s ease;
+    }
+
+    .skill:hover {
+      transform: scale(1.1);
+      background: #00c6ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    footer a {
+      color: #00c6ff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.3em;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideIn {
+      from {opacity: 0; transform: translateX(-50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            <div>
-                <h1>sami hammadi</h1>
-                <p>ingenieurs</p>
-            </div>
-            <div class="contact-info">
-                <p>Email : sami@example.com</p>
-                <p>Téléphone : +33 6 12 34 56 78</p>
-                <p>LinkedIn : linkedin.com/in/tonprofil</p>
-            </div>
-        </div>
+  <div class="container">
+    <header>
+      <h1>Sami Hammadi</h1>
+      <p><i class="fa-solid fa-laptop-code"></i> Développeur Web Junior | Passionné de technologie et d’innovation</p>
+    </header>
 
-        <div class="content">
-            <div class="section-title">
-                <h2>Compétences</h2>
-            </div>
-            <ul>
-                <li>intelligent</li>
-                <li>travailleur</li>
-                <li>concentrer</li>
-                <li>discipliner</li>
-            </ul>
-        </div>
+    <section class="profil">
+      <h2><i class="fa-solid fa-user"></i> Profil</h2>
+      <p>Jeune diplômé en STI2D passionné par le développement web et les nouvelles technologies. Dynamique, curieux et motivé, j’aime relever des défis techniques et apprendre en continu.</p>
+    </section>
 
-        <div class="content">
-            <div class="section-title">
-                <h2>ingenieur</h2>
-            </div>
-            <ul>
-                <li>
-                    <strong>Poste 1</strong> - orange (2022 - 2025)
-                    <p>Description du poste et des réalisations</p>
-                </li>
-                <li>
-                    <strong>Poste 2</strong> - bnp (2020 - 2022)
-                    <p>Description du poste et des réalisations</p>
-                </li>
-            </ul>
-        </div>
+    <section class="experience">
+      <h2><i class="fa-solid fa-briefcase"></i> Expériences Professionnelles</h2>
 
-        <div class="content">
-            <div class="section-title">
-                <h2>Formation</h2>
-            </div>
-            <ul>
-                <li>
-                    <strong>Nom de l'école/université</strong> - Diplôme obtenu (Année d'obtention)
-                </li>
-                <li>
-                    <strong>Nom de l'école/université</strong> - Diplôme obtenu (Année d'obtention)
-                </li>
-            </ul>
-        </div>
+      <div class="item">
+        <h3>Stage – BNP Paribas</h3>
+        <span>Paris | 2023 & 2024</span>
+        <p>Participation à des projets de digitalisation interne, développement d’outils de gestion avec Excel VBA et automatisation de rapports pour le service IT.</p>
+      </div>
 
-        <div class="footer">
-            <p>CV créé par Nom Prénom.</p>
-        </div>
-    </div>
+      <div class="item">
+        <h3>Développeur Web Freelance</h3>
+        <span>2024 – Aujourd’hui</span>
+        <p>Création de sites vitrines et portfolios pour des clients indépendants avec HTML, CSS, JavaScript et WordPress. Optimisation SEO et responsive design.</p>
+      </div>
+
+      <div class="item">
+        <h3>Assistant Technique – Start-up InnovTech</h3>
+        <span>2022 – 2023</span>
+        <p>Aide au développement d’un prototype IoT. Collaboration avec l’équipe ingénierie pour la conception et la mise en place de capteurs connectés.</p>
+      </div>
+    </section>
+
+    <section class="formation">
+      <h2><i class="fa-solid fa-graduation-cap"></i> Formation</h2>
+
+      <div class="item">
+        <h3>Baccalauréat STI2D – Option Systèmes d’Information et Numérique</h3>
+        <span>Lycée Gustave Eiffel | 2023</span>
+      </div>
+
+      <div class="item">
+        <h3>Formation Développeur Web (OpenClassrooms / autodidacte)</h3>
+        <span>2024 – en cours</span>
+      </div>
+    </section>
+
+    <section class="competences">
+      <h2><i class="fa-solid fa-gears"></i> Compétences</h2>
+      <div class="skills">
+        <div class="skill">HTML / CSS / JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">Git / GitHub</div>
+        <div class="skill">WordPress</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">SQL / Bases de données</div>
+        <div class="skill">Outils Microsoft (Excel, VBA)</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>📞 06 12 34 56 78 | ✉️ <a href="mailto:sami.hammadi@gmail.com">sami.hammadi@gmail.com</a></p>
+      <p>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </p>
+    </footer>
+  </div>
 
 </body>
 </html>
+
